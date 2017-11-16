@@ -7,6 +7,7 @@
   var $header    = $workspace.find('header');
   var $save      = $('#save');
   var $github    = $('#github');
+  var $dpi       = $('#dpi');
   var $script    = $('#script').addClass('us-letter').addClass('dpi72');
   var $title     = $('#script-title');
   var $editor    = $('#editor');
@@ -88,6 +89,17 @@ Of course! What was I thinking?
     document.body.removeChild(a);
   }
 
+  var change_dpi = function(){
+    if($script.hasClass('dpi72')){
+      $script.removeClass('dpi72');
+      $script.addClass('dpi100');
+    } else {
+      $script.removeClass('dpi100');
+      $script.addClass('dpi72');
+    }
+    resizeSections();
+  }
+
   /*
   var dragOver = function(e){
     e.preventDefault();
@@ -131,11 +143,14 @@ Of course! What was I thinking?
   // Setup header buttons.
   $save.click(save);
   $github.click(function(){ window.open('www.github.com/joshua-arts/fountain-editor', '_blank') });
+  $dpi.click(change_dpi);
   // Add hover events.
   $save.mouseenter(function(){ $save.css('color', 'red') });
   $save.mouseleave(function(){ $save.css('color', 'white') });
   $github.mouseenter(function(){ $github.css('color', 'red') });
   $github.mouseleave(function(){ $github.css('color', 'white') });
+  $dpi.mouseenter(function(){ $dpi.css('color', 'red') });
+  $dpi.mouseleave(function(){ $dpi.css('color', 'white') });
   // Open the intro file.
   $input.val(intro);
   update();

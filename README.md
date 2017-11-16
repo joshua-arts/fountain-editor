@@ -1,6 +1,6 @@
 # Fountain Editor
 
-Try Fountain Editor [here](hiimjosh.me/fountain-editor)!
+Try Fountain Editor [here](http://hiimjosh.me/fountain-editor)!
 
 Fountain Editor is a simple browser tool that allows you to preview your Fountain project as you work on it. This is helpful for making sure you get the styling right, and quickly playing around with different styles.
 
@@ -15,7 +15,7 @@ For more information about Fountain, check out fountain.io.
 
 ## Usage
 
-You can use Fountain Editor online [here](hiimjosh.me/fountain-editor), but if you'd like to run it locally, simply clone the repo and open `index.html` in your preffered browser.
+You can use Fountain Editor online [here](http://hiimjosh.me/fountain-editor), but if you'd like to run it locally, simply clone the repo and open `index.html` in your preffered browser.
 
 ## Contributing
 

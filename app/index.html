@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Fountain Editor - Edit fountain screenplays, preview live.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fountain Editor allows you to edit fountain screenplays and preview live.">
+
+    <link href="assets/css/normalize.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/fountain-js.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="assets/icons/favicon.ico">
+  </head>
+
+  <body id="fountain-js">
+
+    <section id="workspace">
+      <header>
+        <div class="container">
+          <ul id="inspector">
+            <i id="github" class="fa fa-github fa-lg"></i>
+            <i id="save" class="fa fa-save fa-lg"></i>
+          </ul>
+
+          <p id="script-title"></p>
+        </div>
+      </header>
+
+      <div style="width: 100%;">
+        <div id="editor">
+          <textarea id="input"></textarea>
+        </div>
+
+        <div id="script"></div>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      if (typeof jQuery == 'undefined') {
+        document.write(unescape("%3Cscript src='assets/js/jquery-1.7.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+      }
+    </script>
+    <script type="text/javascript" src="assets/js/fountain.min.js"></script>
+    <script type="text/javascript" src="assets/js/fountain-preview.js"></script>
+  </body>
+</html>

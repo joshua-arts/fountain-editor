@@ -100,19 +100,6 @@ Of course! What was I thinking?
     resizeSections();
   }
 
-  /*
-  var dragOver = function(e){
-    e.preventDefault();
-    e.stopPropagation();
-    // Do some style effect.
-  }
-
-  var dragLeave = function(e){
-    e.preventDefault();
-    e.stopPropagation();
-    // Do some style effect.
-  } */
-
   var loadScript = function(e){
     e.preventDefault();
     e.stopPropagation();
@@ -139,7 +126,7 @@ Of course! What was I thinking?
   // Update the pages when the text changes.
   $input.bind('input propertychange', update);
   // Setup drag events.
-  $editor.on('drop', loadScript);//.on('dragleave', dragLeave).on('dragover', dragOver)
+  $editor.on('drop', loadScript);
   // Setup header buttons.
   $save.click(save);
   $github.click(function(){ window.open('www.github.com/joshua-arts/fountain-editor', '_blank') });
